@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Doctor Dashboard</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link rel="shortcut icon" href="assets/Vector.svg" type="image/x-icon" />
+    <link rel="stylesheet" href="DocDash.css" />
+  </head>
+
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light grad">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          <img src="assets/logoLight.svg" alt="" />
+        </a>
+        <a class="navbar-brand" href="#">HospitalName</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <button class="btn nav-link">
+                <img src="assets/si-glyph_man-doctor.svg" alt="" />
+              </button>
+            </li>
+            <li class="nav-item">
+              <a class="btn nav-link" href="/login.html">
+                <img src="assets/carbon_logout.svg" alt="" />
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <main class="vh-100">
+      <div id="PatientTbl">
+        <table class="table table-striped">
+          <h3 class="mt-5">Patients Overview Table</h3>
+          <p>Total Strength: <span class="text-success">3</span></p>
+          <thead>
+            <tr>
+              <th scope="col">#</th>
+              <th scope="col">First</th>
+              <th scope="col">Last</th>
+              <th scope="col">Diagnosis</th>
+              <th scope="col">Treatment</th>
+              <th scope="col">Status</th>
+              <th scope="col">Actions</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">1</th>
+              <td>Mark</td>
+              <td>Otto</td>
+              <td>Dengue</td>
+              <td>Intensive care</td>
+              <td>Stable</td>
+              <td>
+                <button class="btn btn-dark">Discharge</button>
+                <p class="hide">Discharged</p>
+              </td>
+            </tr>
+            <tr>
+              <th scope="row">2</th>
+              <td>Jacob</td>
+              <td>Thornton</td>
+              <td>Malaria</td>
+              <td>Saline monitoring</td>
+              <td>unstable</td>
+              <td>
+                <button class="btn btn-dark">Discharge</button>
+                <p class="hide">Discharged</p>
+              </td>
+            </tr>
+            <tr>
+              <th scope="row">3</th>
+              <td colspan="2">Larry the Bird</td>
+              <td>Covid-19</td>
+              <td>Remedisivir</td>
+              <td>Stable</td>
+              <td>
+                <button class="btn btn-dark">Discharge</button>
+                <p class="hide">Discharged</p>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </main>
+
+    <footer>
+      <div class="m-5">
+        <p>Contact: officialMail@gmail.com</p>
+        <p>+91 91o134563I</p>
+        <p>Post: Pune -35</p>
+      </div>
+      <div class="m-5">
+        <p>Navigation:</p>
+        <a href="">Admin</a>
+        <a href="">Doctor</a>
+        <a href="">Login</a>
+      </div>
+      <div class="m-5">
+        <p>Follow us at:</p>
+        <img src="assets/FacebookIcon.svg" alt="" />
+        <img src="assets/TwitterIcon.svg" alt="" />
+        <img src="assets/LinkedinIcon.png" alt="" />
+      </div>
+    </footer>
+    <div class="creds p-4">Designed by: Piyush Pradeep Terkar 2021</div>
+    <script src="/DocDash.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

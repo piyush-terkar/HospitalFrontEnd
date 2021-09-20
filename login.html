@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login | HospitalName</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link rel="shortcut icon" href="assets/Vector.svg" type="image/x-icon" />
+    <link rel="stylesheet" href="login.css" />
+  </head>
+
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          <img src="assets/Vector.svg" alt="" />
+          HospitalName
+        </a>
+ 
+    </nav>
+
+    <main class="d-flex vh-100 bg-image">
+      <div class="card">
+        <nav class="card-header">
+          <div
+            class="nav nav-tabs card-header-tabs"
+            id="nav-tab"
+            role="tablist"
+          >
+            <button
+              class="nav-link active"
+              id="nav-home-tab"
+              data-bs-toggle="tab"
+              data-bs-target="#nav-home"
+              type="button"
+              role="tab"
+              aria-controls="nav-home"
+              aria-selected="true"
+            >
+              Admin
+            </button>
+            <button
+              class="nav-link"
+              id="nav-profile-tab"
+              data-bs-toggle="tab"
+              data-bs-target="#nav-profile"
+              type="button"
+              role="tab"
+              aria-controls="nav-profile"
+              aria-selected="false"
+            >
+              Doctor
+            </button>
+            <button
+              class="nav-link"
+              id="nav-contact-tab"
+              data-bs-toggle="tab"
+              data-bs-target="#nav-contact"
+              type="button"
+              role="tab"
+              aria-controls="nav-contact"
+              aria-selected="false"
+            >
+              Staff
+            </button>
+            <button
+              class="nav-link"
+              id="nav-register-tab"
+              data-bs-toggle="tab"
+              data-bs-target="#nav-register"
+              type="button"
+              role="tab"
+              aria-controls="nav-contact"
+              aria-selected="false"
+            >
+              Register
+            </button>
+          </div>
+        </nav>
+
+        <div class="tab-content card-body" id="nav-tabContent">
+          <div
+            class="tab-pane fade show active"
+            id="nav-home"
+            role="tabpanel"
+            aria-labelledby="nav-home-tab"
+          >
+            <h2 class="card-title my-3">Administrator login</h2>
+            <form novalidate class="validated-form">
+              <div class="mb-3 py-3">
+                <label for="exampleInputEmail1" class="form-label"
+                  >Email address</label
+                >
+                <input
+                  type="email"
+                  class="form-control"
+                  id="exampleInputEmail1"
+                  aria-describedby="emailHelp"
+                  required
+                />
+                <div id="emailHelp" class="form-text">
+                  We'll never share your email with anyone else.
+                </div>
+                <div class="valid-feedback">Looks good!</div>
+              </div>
+              <div class="mb-3">
+                <label for="exampleInputPassword1" class="form-label"
+                  >Password</label
+                >
+                <input
+                  type="password"
+                  class="form-control"
+                  id="exampleInputPassword1"
+                  required
+                />
+                <div class="valid-feedback">Looks good!</div>
+              </div>
+              <div class="mb-3 form-check">
+                <input
+                  type="checkbox"
+                  class="form-check-input"
+                  id="exampleCheck1"
+                />
+                <label class="form-check-label" for="exampleCheck1"
+                  >Keep me logged in</label
+                >
+              </div>
+              <button type="submit" class="btn btn-danger">
+                <a class="text-white" href="/AdminDash.html">Login</a>
+              </button>
+            </form>
+            <div class="my-3 py-3">
+              <h3 class="card-text">OR Login using:</h3>
+              <a href="">
+                <img
+                  class="image-fluid"
+                  src="assets/flat-color-icons_google.svg"
+                  alt="Google logo"
+                />
+                <p>Google</p>
+              </a>
+            </div>
+          </div>
+
+          <div
+            class="tab-pane fade"
+            id="nav-profile"
+            role="tabpanel"
+            aria-labelledby="nav-profile-tab"
+          >
+            <h2 class="card-title my-3">Doctor login</h2>
+            <form novalidate class="validated-form">
+              <div class="mb-3 py-3">
+                <label for="exampleInputEmail1" class="form-label"
+                  >Email address</label
+                >
+                <input
+                  type="email"
+                  class="form-control"
+                  id="exampleInputEmail1"
+                  aria-describedby="emailHelp"
+                  required
+                />
+                <div id="emailHelp" class="form-text">
+                  We'll never share your email with anyone else.
+                </div>
+                <div class="valid-feedback">Looks good!</div>
+              </div>
+              <div class="mb-3">
+                <label for="exampleInputPassword1" class="form-label"
+                  >Password</label
+                >
+                <input
+                  type="password"
+                  class="form-control"
+                  id="exampleInputPassword1"
+                  required
+                />
+                <div class="valid-feedback">Looks good!</div>
+              </div>
+              <div class="mb-3 form-check">
+                <input
+                  type="checkbox"
+                  class="form-check-input"
+                  id="exampleCheck1"
+                />
+                <label class="form-check-label" for="exampleCheck1"
+                  >Keep me logged in</label
+                >
+              </div>
+              <button type="submit" class="btn btn-danger">
+                <a class="text-white" href="/DocDash.html">Login</a>
+              </button>
+            </form>
+            <div class="my-3 py-3">
+              <h3 class="card-text">OR Login using:</h3>
+              <a href="">
+                <img
+                  class="image-fluid"
+                  src="assets/flat-color-icons_google.svg"
+                  alt="Google logo"
+                />
+                <p>Google</p>
+              </a>
+            </div>
+          </div>
+
+          <div
+            class="tab-pane fade"
+            id="nav-contact"
+            role="tabpanel"
+            aria-labelledby="nav-contact-tab"
+          >
+            <h2 class="card-title my-3">Staff login</h2>
+            <form novalidate class="validated-form">
+              <div class="mb-3 py-3">
+                <label for="exampleInputEmail1" class="form-label"
+                  >Email address</label
+                >
+                <input
+                  type="email"
+                  class="form-control"
+                  id="exampleInputEmail1"
+                  aria-describedby="emailHelp"
+                  required
+                />
+                <div id="emailHelp" class="form-text">
+                  We'll never share your email with anyone else.
+                </div>
+                <div class="valid-feedback">Looks good!</div>
+              </div>
+              <div class="mb-3">
+                <label for="exampleInputPassword1" class="form-label"
+                  >Password</label
+                >
+                <input
+                  type="password"
+                  class="form-control"
+                  id="exampleInputPassword1"
+                  required
+                />
+                <div class="valid-feedback">Looks good!</div>
+              </div>
+              <div class="mb-3 form-check">
+                <input
+                  type="checkbox"
+                  class="form-check-input"
+                  id="exampleCheck1"
+                />
+                <label class="form-check-label" for="exampleCheck1"
+                  >Keep me logged in</label
+                >
+              </div>
+              <button type="submit" class="btn btn-danger">
+                <a class="text-white" href="/StaffDash.html">Login</a>
+              </button>
+            </form>
+            <div class="my-3 py-3">
+              <h3 class="card-text">OR Login using:</h3>
+              <a href="">
+                <img
+                  class="image-fluid"
+                  src="assets/flat-color-icons_google.svg"
+                  alt="Google logo"
+                />
+                <p>Google</p>
+              </a>
+            </div>
+          </div>
+
+          <div
+            class="tab-pane fade"
+            id="nav-register"
+            role="tabpanel"
+            aria-labelledby="nav-register-tab"
+          >
+            <h2 class="card-title my-3">Registeration form</h2>
+            <form novalidate class="validated-form" id="regForm">
+              <div class="mb-3 py-3">
+                <label for="exampleInputEmail1" class="form-label"
+                  >Email address</label
+                >
+                <input
+                  type="email"
+                  class="form-control"
+                  id="exampleInputEmail1"
+                  aria-describedby="emailHelp"
+                  required
+                />
+                <div id="emailHelp" class="form-text">
+                  We'll never share your email with anyone else.
+                </div>
+                <div class="valid-feedback">Looks good!</div>
+              </div>
+              <div class="mb-3">
+                <label for="exampleInputPassword1" class="form-label"
+                  >Password</label
+                >
+                <input
+                  type="password"
+                  class="form-control"
+                  id="exampleInputPassword1"
+                  required
+                />
+                <div class="valid-feedback">Looks good!</div>
+              </div>
+              <button type="submit" class="btn btn-danger" id="Register">
+                Register
+              </button>
+            </form>
+            <h3 class="card-text hide" id="ReqMsg">
+              Your request for Registeration has been sent to the admin, you can
+              login once he approves it
+            </h3>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <div class="m-5">
+        <p>Contact: officialMail@gmail.com</p>
+        <p>+91 91o134563I</p>
+        <p>Post: Pune -35</p>
+      </div>
+      <div class="m-5">
+        <p>Navigation:</p>
+        <a href="">Admin</a>
+        <a href="">Doctor</a>
+        <a href="">Login</a>
+      </div>
+      <div class="m-5">
+        <p>Follow us at:</p>
+        <img src="assets/FacebookIcon.svg" alt="" />
+        <img src="assets/TwitterIcon.svg" alt="" />
+        <img src="assets/LinkedinIcon.png" alt="" />
+      </div>
+    </footer>
+    <div class="creds p-4">Designed by: Piyush Pradeep Terkar 2021</div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      (function () {
+        "use strict";
+        const forms = document.querySelectorAll(".validated-form");
+
+        Array.from(forms).forEach(function (form) {
+          form.addEventListener(
+            "submit",
+            function (event) {
+              if (!form.checkValidity()) {
+                event.preventDefault();
+                event.stopPropagation();
+              }
+
+              form.classList.add("was-validated");
+            },
+            false
+          );
+        });
+      })();
+    </script>
+    <script src="/login.js"></script>
+  </body>
+</html>
